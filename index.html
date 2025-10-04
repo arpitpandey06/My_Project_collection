@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arpit Pandey| Web Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar (Profile + Contact) -->
+    <aside class="sidebar">
+      <!-- Profile Card -->
+      <div class="profile-card animate">
+        <div class="avatar"><img src="user_pic.jpg" alt="user_picture"></div>
+        <h3 class="profile-name">Arpit Pandey</h3>
+        <p class="profile-title">Junior Web Developer</p>
+        <p class="profile-bio">
+          I build beautiful, performant web applications with modern technologies. 
+          Passionate about clean code and user experience.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="nav-section animate animate-delay-1">
+        <h4 class="nav-title">Get In Touch</h4>
+        <form class="contact-form" id="contactForm">
+          <input type="text" class="form-input" placeholder="Your Name" required>
+          <input type="email" class="form-input" placeholder="Your Email" required>
+          <textarea class="form-textarea" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="header animate">
+        <h1 class="logo">Arpit Pandey</h1>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero animate animate-delay-1">
+        <h1>Welcome to My Portfolio</h1>
+        <p>
+          Explore my latest projects, built with cutting-edge technologies 
+          and designed with user experience in mind.
+        </p>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects-section">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card animate animate-delay-2">
+            <div class="project-image">E-Commerce Platform</div>
+            <div class="project-content">
+              <h3 class="project-title">E-Commerce Platform</h3>
+              <p class="project-description">
+                Full-featured online shopping experience with real-time inventory, 
+                secure payments, and admin dashboard.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">Stripe</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="#" class="btn btn-secondary">
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card animate animate-delay-3">
+            <div class="project-image">Weather Dashboard</div>
+            <div class="project-content">
+              <h3 class="project-title">Weather Dashboard</h3>
+              <p class="project-description">
+                Real-time weather forecasting with 5-day predictions, 
+                location-based alerts, and beautiful visualizations.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">OpenWeather API</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">Geolocation</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="#" class="btn btn-secondary">
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card animate animate-delay-4">
+            <div class="project-image">Task Manager Pro</div>
+            <div class="project-content">
+              <h3 class="project-title">Task Manager Pro</h3>
+              <p class="project-description">
+                Productivity app with drag-and-drop interface, 
+                priority levels, due dates, and team collaboration features.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">Redux</span>
+                <span class="tech-tag">Material UI</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="#" class="btn btn-secondary">
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card animate animate-delay-5">
+            <div class="project-image">Portfolio Website</div>
+            <div class="project-content">
+              <h3 class="project-title">Portfolio Website</h3>
+              <p class="project-description">
+                This very website! Built with modern web standards, 
+                fully responsive, and optimized for performance.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Flexbox/Grid</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="#" class="btn btn-secondary">
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card animate animate-delay-6">
+            <div class="project-image">Chat Application</div>
+            <div class="project-content">
+              <h3 class="project-title">Real-time Chat App</h3>
+              <p class="project-description">
+                Instant messaging platform with private/group chats, 
+                file sharing, and message encryption.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Socket.io</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">React</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="#" class="btn btn-secondary">
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card animate">
+            <div class="project-image">Blog Platform</div>
+            <div class="project-content">
+              <h3 class="project-title">Modern Blog Platform</h3>
+              <p class="project-description">
+                Full-featured blogging platform with rich text editor, 
+                SEO optimization, and comment system.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Prisma</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Tailwind CSS</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-primary">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="#" class="btn btn-secondary">
+                  <i class="fab fa-github"></i> Source
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>&copy; 2025 Arpit Pandey. All rights reserved.</p>
+      </footer>
+    </main>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
