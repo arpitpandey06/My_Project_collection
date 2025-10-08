@@ -1,10 +1,11 @@
 /* ===== DESIGN SYSTEM ===== */
 :root {
     /* Light Theme */
-    --gb-body-light: #fafafa;
+    --bg-body-light: #fafafa;
     --bg-card-light: #ffffff;
-    -r-text-pimary-light: #1a1a1a;
+    --text-primary-light: #1a1a1a;
     --text-secondary-light: #666666;
+    --heading-light: #0f0f0f;
     --border-light: #e0e0e0;
     --accent-light: #2d7ff9;
     --accent-hover-light: #1a6be0;
@@ -16,6 +17,7 @@
     --bg-card: #1a1a1a;
     --text-primary: #ffffff;
     --text-secondary: #a0a0a0;
+    --heading: #ffffff;
     --border: #2d2d2d;
     --accent: #4fc3f7;
     --accent-hover: #29b6f6;
@@ -56,14 +58,14 @@ body {
     line-height: 1.6;
     min-height: 100vh;
     padding: var(--space-lg);
+    transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    color: var(--heading);
+    transition: color var(--transition-normal);
 }
 
 /* ===== LAYOUT ===== */
@@ -89,6 +91,7 @@ h4 {
     align-items: center;
     padding: var(--space-md) 0;
     border-bottom: 1px solid var(--border);
+    transition: border-color var(--transition-normal);
 }
 
 .logo {
@@ -99,11 +102,12 @@ h4 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    transition: background var(--transition-normal);
 }
 
 .theme-toggle {
     background: var(--bg-card);
-    border: 2.5px solid white;
+    border: 2.5px solid var(--text-primary);
     width: 44px;
     height: 44px;
     border-radius: var(--radius-full);
@@ -112,11 +116,13 @@ h4 {
     justify-content: center;
     cursor: pointer;
     transition: var(--transition-normal);
+    color: var(--text-primary);
 }
 
 .theme-toggle:hover {
     transform: rotate(20deg);
     border-color: var(--accent);
+    color: var(--accent);
 }
 
 /* ===== SIDEBAR ===== */
@@ -133,9 +139,10 @@ h4 {
     padding: var(--space-lg);
     text-align: center;
     box-shadow: var(--shadow);
+    transition: background-color var(--transition-normal), box-shadow var(--transition-normal);
 }
 
-.avatar img{
+.avatar img {
     width: 100px;
     height: 100px;
     border-radius: var(--radius-full);
@@ -147,23 +154,28 @@ h4 {
     font-size: 2.5rem;
     font-weight: bold;
     color: white;
+    transition: background var(--transition-normal);
 }
 
 .profile-name {
     font-size: 1.5rem;
     margin-bottom: var(--space-xs);
+    color: var(--heading);
+    transition: color var(--transition-normal);
 }
 
 .profile-title {
     color: var(--accent);
     font-size: 0.95rem;
     margin-bottom: var(--space-md);
+    transition: color var(--transition-normal);
 }
 
 .profile-bio {
     color: var(--text-secondary);
     font-size: 0.95rem;
     line-height: 1.5;
+    transition: color var(--transition-normal);
 }
 
 .social-links {
@@ -185,12 +197,14 @@ h4 {
     font-size: 0.9rem;
     transition: var(--transition-normal);
     text-decoration: none;
+    border: 1px solid var(--border);
 }
 
 .social-link:hover {
     background: var(--accent);
     color: white;
     transform: translateY(-2px);
+    border-color: var(--accent);
 }
 
 .nav-section {
@@ -198,6 +212,7 @@ h4 {
     border-radius: var(--radius-lg);
     padding: var(--space-lg);
     box-shadow: var(--shadow);
+    transition: background-color var(--transition-normal), box-shadow var(--transition-normal);
 }
 
 .nav-title {
@@ -206,6 +221,7 @@ h4 {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: var(--space-md);
+    transition: color var(--transition-normal);
 }
 
 .contact-form {
@@ -258,18 +274,22 @@ h4 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    transition: background var(--transition-normal);
 }
 
 .hero p {
     color: var(--text-secondary);
     font-size: 1.2rem;
     margin-bottom: var(--space-xl);
+    transition: color var(--transition-normal);
 }
 
 .projects-section h2 {
     font-size: 2.2rem;
     margin-bottom: var(--space-lg);
     text-align: center;
+    color: var(--heading);
+    transition: color var(--transition-normal);
 }
 
 /* ===== PROJECTS GRID ===== */
@@ -300,6 +320,7 @@ h4 {
     display: flex;
     flex-direction: column;
     height: 100%;
+    transition: background-color var(--transition-normal), box-shadow var(--transition-normal), transform var(--transition-normal);
 }
 
 .project-card:hover {
@@ -329,6 +350,8 @@ h4 {
 .project-title {
     font-size: 1.3rem;
     margin-bottom: var(--space-sm);
+    color: var(--heading);
+    transition: color var(--transition-normal);
 }
 
 .project-description {
@@ -336,6 +359,7 @@ h4 {
     font-size: 0.95rem;
     margin-bottom: var(--space-md);
     flex: 1;
+    transition: color var(--transition-normal);
 }
 
 .project-tech {
@@ -352,6 +376,7 @@ h4 {
     border-radius: var(--radius-full);
     font-size: 0.8rem;
     font-weight: 500;
+    transition: background var(--transition-normal), color var(--transition-normal);
 }
 
 .project-actions {
@@ -399,6 +424,7 @@ h4 {
     padding: var(--space-xl) 0;
     color: var(--text-secondary);
     font-size: 0.9rem;
+    transition: color var(--transition-normal);
 }
 
 /* ===== ANIMATIONS ===== */
@@ -453,4 +479,51 @@ h4 {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: var(--space-md);
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .projects-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .project-actions {
+        flex-direction: column;
+    }
+    
+    .btn {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        gap: var(--space-md);
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .profile-card, .nav-section {
+        padding: var(--space-md);
+    }
 }
